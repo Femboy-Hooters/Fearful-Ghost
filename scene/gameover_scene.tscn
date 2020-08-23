@@ -1,0 +1,73 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://script/gameover_script.gd" type="Script" id=1]
+[ext_resource path="res://assets/font/dynamicMedium.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/font/Retro Gaming.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 3 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.466667, 0.490196, 0.976471, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -237.0
+margin_top = -94.5
+margin_right = 237.0
+margin_bottom = 94.5
+custom_constants/separation = 80
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_right = 474.0
+margin_bottom = 92.0
+custom_fonts/font = ExtResource( 2 )
+text = "GAME OVER"
+align = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+modulate = Color( 0, 1, 0, 1 )
+margin_top = 172.0
+margin_right = 474.0
+margin_bottom = 249.0
+custom_fonts/font = SubResource( 1 )
+text = "BACK"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="VBoxContainer/Label2"]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -113.622
+margin_top = -32.0
+margin_right = 118.378
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="VBoxContainer/Label2/Button" to="." method="_on_Button_pressed"]

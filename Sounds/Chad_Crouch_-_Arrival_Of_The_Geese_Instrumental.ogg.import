@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Chad_Crouch_-_Arrival_Of_The_Geese_Instrumental.ogg-abc522cf31067c2d6a648402d807d361.oggstr"
+
+[deps]
+
+source_file="res://Sounds/Chad_Crouch_-_Arrival_Of_The_Geese_Instrumental.ogg"
+dest_files=[ "res://.import/Chad_Crouch_-_Arrival_Of_The_Geese_Instrumental.ogg-abc522cf31067c2d6a648402d807d361.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
